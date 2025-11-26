@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; padding: 20px; background:#f6f8fa; }
+.app h1 { text-align:center; }
+.grid { display:flex; gap:20px; align-items:flex-start; flex-wrap:wrap; }
+.card { background:white; padding:16px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.08); width:480px; }
+.small-form { display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap; }
+.small-form input, .small-form select { padding:8px; flex:1 1 140px; }
+.small-form button { padding:8px 12px; }
+ul { list-style:none; padding:0; }
+li { margin-bottom:8px; border-bottom:1px dashed #eee; padding-bottom:8px; }
