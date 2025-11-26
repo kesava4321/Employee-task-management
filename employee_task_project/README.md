@@ -125,7 +125,8 @@ Example Task JSON
   "employeeId": 1
 }
 
-<img width="359" height="532" alt="image" src="https://github.com/user-attachments/assets/628492c9-e2a4-4fde-93f3-21d2b1c7c7e6" />
+<img width="386" height="536" alt="image" src="https://github.com/user-attachments/assets/d1293e95-8c8b-4bb9-bc76-2f444cafa7cd" />
+
 
 
 ## ⭐ Future Enhancements
