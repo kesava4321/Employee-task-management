@@ -141,3 +141,9 @@ Docker support
 
 Deployment (Render + Netlify)
 
+# screenshots
+<img width="1365" height="765" alt="image" src="https://github.com/user-attachments/assets/0ec29691-fd3d-4cbb-8b83-7c98c73779bd" />
+
+<img width="1361" height="723" alt="image" src="https://github.com/user-attachments/assets/17813615-423e-4211-afe7-f3a6870a8165" />
+
+<img width="1364" height="672" alt="image" src="https://github.com/user-attachments/assets/bcdd9629-39b5-416c-aed0-dde9d88377a4" />
