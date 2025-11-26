@@ -1,73 +1,142 @@
-# Employee Task Manager — Assessment Demo
+# 🚀 Employee Task Manager 
 
-**Track:** Backend Development (API + DB + Frontend)  
-**Tech stack:** Node.js, Express, Sequelize, SQLite (backend) + React (frontend)
+A complete Employee & Task Management System built as part of the **Track 2 – Backend Development Assessment**.  
+This project includes a **Node.js backend**, **SQLite database**, and a **React (Vite) frontend** with full CRUD functionality.
 
-## Features
-- REST APIs for **Employees** (CRUD) and **Tasks** (CRUD)
-- Task assignment to employees (FK)
-- Simple React frontend to create / list employees and tasks
-- DB seed and migrate scripts included
+---
 
-## Setup (local, quick)
+## 📌 Tech Stack
+
 ### Backend
-1. `cd backend`
-2. `npm install`
-3. Create `.env` with:
-   ```
-   PORT=4000
-   DATABASE_URL=sqlite:./data/dev.sqlite
-   ```
-4. Run migrations: `npm run migrate`
-5. Seed sample data (optional): `npm run seed`
-6. Start server: `npm run dev` or `npm start`
-7. API base: `http://localhost:4000/api`
-
-Endpoints:
-- `GET /api/employees` — list employees (with tasks)
-- `POST /api/employees` — create employee `{name,email,position}`
-- `GET /api/employees/:id`, `PUT /api/employees/:id`, `DELETE /api/employees/:id`
-- `GET /api/tasks`, `POST /api/tasks`, `GET /api/tasks/:id`, `PUT /api/tasks/:id`, `DELETE /api/tasks/:id`
+- Node.js  
+- Express.js  
+- Sequelize ORM  
+- SQLite (default)
 
 ### Frontend
-1. `cd frontend`
-2. `npm install`
-3. Create `.env` with `VITE_API_URL=http://localhost:4000/api`
-4. Start: `npm run dev`
-5. Open: `http://localhost:5173` (Vite default) or as terminal shows.
+- React (Vite)  
+- Fetch API  
+- Basic CSS
 
-## Switching to Postgres (if required)
-1. Create Postgres DB and set `DATABASE_URL=postgres://user:pass@host:port/dbname`.
-2. Install `pg` package: `npm install pg`.
-3. Run `npm run migrate` to create tables.
+---
 
-## What to submit
-- GitHub repo (public) with:
-  - `backend/` and `frontend/` folders
-  - `README.md`
-  - screenshots or a short screen recording of the app working
-- Email body (sample included below) to acknowledge and submit.
+## 📂 Project Structure
 
-## Sample submission email
-Subject: Submission — Online Assessment (Track 2 - Backend Development) — [Your Name]
 
-Body:
-```
-Dear Vasudharini / Team,
+employee_task_project/
 
-Thank you — I acknowledge receipt of the assessment instructions for Track 2 - Backend Development.
+│
 
-I have completed the assignment. The project repository is here: <PASTE_GITHUB_REPO_URL>
+├── backend/
 
-Summary:
-- Backend: Node.js, Express, Sequelize, SQLite (migrate & seed scripts included)
-- Frontend: React (Vite) - simple UI for Employees & Tasks
-- Instructions to run are in README.md
-- Screenshots and a short demo recording are included in the repo under /docs
+│ ├── src/
 
-Please let me know if you would like a live demo or deployed link.
+│ │ ├── models/
 
-Regards,
-[Your Name]
-[Email]
-```
+│ │ ├── routes/
+
+│ │ ├── utils/
+
+│ │ └── server.js
+
+│ ├── package.json
+
+│ ├── .env
+
+│
+├── frontend/
+
+│ ├── src/
+
+│ │ ├── components/
+
+│ │ ├── App.jsx
+
+│ │ └── main.jsx
+
+│ ├── package.json
+
+│ ├── .env
+
+│
+
+└── README.md
+
+---
+
+# 🛠️ Setup Instructions
+
+## 1️⃣ Backend Setup
+
+
+cd backend
+npm install
+npm run migrate
+npm run seed
+npm run dev
+
+Backend runs at:
+👉 http://localhost:4000/api
+
+## 2️⃣ Frontend Setup
+
+Open a NEW PowerShell window:
+cd frontend
+npm install
+npm run dev
+
+Frontend runs at:
+👉 http://localhost:5173
+
+Employees API
+| Method | Endpoint           | Description        |
+| ------ | ------------------ | ------------------ |
+| GET    | /api/employees     | Get all employees  |
+| POST   | /api/employees     | Create employee    |
+| GET    | /api/employees/:id | Get employee by ID |
+| PUT    | /api/employees/:id | Update employee    |
+| DELETE | /api/employees/:id | Delete employee    |
+
+
+Example Employee JSON
+
+{
+  "name": "Alice",
+  "email": "alice@example.com",
+  "position": "Developer"
+}
+
+Tasks API
+| Method | Endpoint       | Description    |
+| ------ | -------------- | -------------- |
+| GET    | /api/tasks     | Get all tasks  |
+| POST   | /api/tasks     | Create task    |
+| GET    | /api/tasks/:id | Get task by ID |
+| PUT    | /api/tasks/:id | Update task    |
+| DELETE | /api/tasks/:id | Delete task    |
+
+
+Example Task JSON
+
+{
+  "title": "Build backend",
+  "description": "Create employee/task CRUD APIs",
+  "status": "in-progress",
+  "employeeId": 1
+}
+
+<img width="359" height="532" alt="image" src="https://github.com/user-attachments/assets/628492c9-e2a4-4fde-93f3-21d2b1c7c7e6" />
+
+
+## ⭐ Future Enhancements
+
+JWT Authentication
+
+Pagination & Search
+
+Sorting & Filters
+
+Docker support
+
+Deployment (Render + Netlify)
+
